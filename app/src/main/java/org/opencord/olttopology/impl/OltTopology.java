@@ -723,7 +723,8 @@ public class OltTopology implements OltTopologyInformationService {
                         break;
                     case PORT_UPDATED:
                         // if Port is enabled, provision LLDP flow and send LLDP packet to NNI Port.
-                        if (!oltPortMap.get(devId).equals(event.port())) {
+                        if (Objects.nonNull(oltPortMap.get(devId)) &&
+                                !oltPortMap.get(devId).equals(event.port())) {
                             break;
                         }
                         if (event.port().isEnabled()) {
