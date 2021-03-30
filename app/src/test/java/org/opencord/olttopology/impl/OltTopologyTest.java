@@ -574,6 +574,11 @@ public class OltTopologyTest extends OltTopologyTestBase {
         }
 
         @Override
+        public void clearLocalData() {
+
+        }
+
+        @Override
         public void invalidateAll() {
         }
 

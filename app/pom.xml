@@ -39,7 +39,7 @@
         </api.description>
         <api.package>org.opencord.olttopology.rest</api.package>
         <olttopology.api.version>1.0.2</olttopology.api.version>
-        <sadis.api.version>5.0.0</sadis.api.version>
+        <sadis.api.version>5.3.0</sadis.api.version>
     </properties>
 
     <dependencies>
